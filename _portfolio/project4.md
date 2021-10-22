@@ -1,11 +1,11 @@
 ---
-title: Errata 1 - Mar/2019
+title: Errata 1-Mar/2019
 subtitle:
 image:
 alt:
 
 caption:
-  title: Errata 1 - Mar/2019
+  title: Errata 1-Mar/2019
   subtitle:
   thumbnail:
 ---
