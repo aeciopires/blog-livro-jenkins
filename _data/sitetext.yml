@@ -14,11 +14,11 @@ pt: &DEFAULT_PT
     title: 
     text: 
     button: Compre o livro
-    buttonlink: "https://novatec.com.br/livros/puppet/"
+    buttonlink: "https://novatec.com.br/livros/jenkins/"
 
   services:
     title: "Livros"
-    text: "Conheça os outros livros escritos pelo autor."
+    text: "Conheça os outros livros."
     section: services
     align: center
     list:
@@ -28,7 +28,7 @@ pt: &DEFAULT_PT
       - title: "[De A a Zabbix](https://gitlab.com/livro/zabbix)"
         desc:
         icon: fas fa-book
-      - title: "[Integração Contínua com Jenkins](https://gitlab.com/livro/jenkins)"
+      - title: "[Gerência de Configuração com Puppet](https://gitlab.com/livro/puppet)"
         desc:
         icon: fas fa-book
 
@@ -39,30 +39,30 @@ pt: &DEFAULT_PT
     closebutton: "Fechar"
 
   timeline:
-    title: "Funcionalidades"
-    text: "Estas são algumas das funcionalidades do Puppet."
+    title: "Características"
+    text: "Estas são algumas das características do Jenkins."
     section: timeline
     # left is the default
     #start_align: "left"
     events:
-      - title: "Simulação"
+      - title: "Integração"
         year:
-        desc: "Simule as mudanças de configuração sem realizar alterações nos hosts gerenciados."
+        desc: "Integre o Jenkins a ferramentas de versionamento de código, testes, build, orquestração de conteineires, gerência de configuração, deploy e envio de notificações."
         image: assets/img/timeline/1.png
         alt:
-      - title: "Dados e códigos"
+      - title: "Automação"
         year:
-        desc: "Separe os dados do código usando o Hiera."
+        desc: "Automatize tarefas que vão desde o push no repositório Git até o deploy em ambientes de teste, homologação e produção."
         image: assets/img/timeline/2.png
         alt:
-      - title: "Relatórios"
+      - title: "Pipeline"
         year:
-        desc: "Visualize as mudanças realizadas no ambiente através do PuppetBoard e receba notificações por email através do TagMail."
+        desc: "Desenvolva pipelines em etapas que facilitem a visualização do andamento do trabalho automatizado realizado pelo Jenkins."
         image: assets/img/timeline/3.png
         alt:
-      - title: "Versionamento"
+      - title: "Agilidade"
         year:
-        desc: "Versione a configuração da infraestrutura usando o git."
+        desc: "Com o Jenkins você conseguirá identificar problemas em alguma etapa do pipeline mais rápido e fazer deploy com maior frequência de forma automatizada confiável."
         image: assets/img/timeline/4.png
         alt:
         # you can enforce the alignment
@@ -72,7 +72,7 @@ pt: &DEFAULT_PT
   about:
     title: "Resumo"
     text:
-    body: "Considerando que os papéis do administrador de sistema moderno são: agilizar a entrega do software e administrar um crescente ambiente, formado por servidores e serviços heterogêneos; Este livro apresenta a ferramenta e uma outra forma de trabalho, baseada na cultura DevOPs. Ao invés de criar scripts e ISOs customizadas, o administrador criará uma documentação que é fácil de ler, modificar, além de ser executável. Os capítulos fornecem, de maneira equilibrada, conteúdo teórico e exercícios práticos, de forma que ao final da leitura do livro, o leitor terá simulado a configuração automatizada de um ambiente formado por sistemas operacionais e serviços de rede comum em muitas empresas."
+    body: "Neste livro você entenderá os conceitos e as diferenças entre Continuous Integration, Continuous Delivery e Continuous Deploy. Conhecerá um caso de uso do Jenkins ao ser integrado com as ferramentas: Gogs, Maven, Nexus, SonarQube, Docker, Terraform e Shell Script. Este conjunto de ferramentas permite automatizar um cliclo de desenvolvimento, testes e implantação de uma aplicação web. Você também conhecerá alguns conceitos próprios do Jenkins, aprenderá a configurá-lo como código, alterar o tema, instalar plugins, gerenciar usuários, credenciais e escrever pipelines. Para ler e praticar os conhecimentos compartilhados neste livro não é necessário nenhum conhecimento prévio sobre Jenkins e o público alvo são estudantes da área de Tecnologia da Informação, administradores de sistemas, administradores de rede, desenvolvedores e gerentes."
     section: about
 
   #clients:
@@ -96,7 +96,7 @@ pt: &DEFAULT_PT
   team:
     title: "Autor e Revisor"
     text: "Conheça as pessoas que colaboraram com o conteúdo do livro."
-    subtext: "Possui alguma dúvida, sugestão de melhoria, problema ou elogio? Entre em contato por meio deste link: [https://form.jotformz.com/71423720812650](https://form.jotformz.com/71423720812650)"
+    subtext: "Possui alguma dúvida, sugestão de melhoria, problema ou elogio? Entre em contato por meio deste link: [https://form.jotformz.com/52873922998677](https://form.jotformz.com/52873922998677)"
     section: team
     align: center
     people:
@@ -112,13 +112,11 @@ pt: &DEFAULT_PT
       #  role:
       #  #image:
       #  social:
-      - name: "André Luis Boni Déo"
-        role: "Revisor técnico"
-        image: assets/img/team/andredeo.jpg
+      - name: "Janaína Militão do Nascimento"
+        role: "Autora"
+        image: assets/img/team/janaina.jpeg
         social:
-          - url: https://twitter.com/deoandre
-            icon: fab fa-twitter
-          - url: https://br.linkedin.com/in/andredeo/
+          - url: https://linkedin.com/in/janaina-militao
             icon: fab fa-linkedin-in
 
   #contact:
@@ -143,7 +141,7 @@ pt: &DEFAULT_PT
         icon: "fab fa-twitter"
       - url: https://www.linkedin.com/in/aeciopires/
         icon: "fab fa-linkedin-in"
-      - url: https://gitlab.com/livro/puppet
+      - url: https://gitlab.com/livro/jenkins
         icon: "fab fa-gitlab"
 pt-BR:
   <<: *DEFAULT_PT

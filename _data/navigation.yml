@@ -17,12 +17,12 @@ pt: &DEFAULT_PT
       section: portfolio
     - title: "Resumo"
       section: about
-    - title: "Funcionalidades"
+    - title: "Características"
       section: timeline
     - title: "Autor"
       section: team
     - title: "Novatec"
-      url: https://novatec.com.br/livros/puppet/
+      url: https://novatec.com.br/livros/jenkins/
 pt-BR:
   <<: *DEFAULT_PT
 pt-PT:
