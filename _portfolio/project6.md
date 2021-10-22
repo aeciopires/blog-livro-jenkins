@@ -1,11 +1,11 @@
 ---
-title: Errata 3: Ajuste nas configurações das VMs e comandos de alguns contêineres – Nov/2020
+title: Errata 3 - Ajuste nas configurações das VMs e comandos de alguns contêineres – Nov/2020
 subtitle:
 image:
 alt:
 
 caption:
-  title: Errata 3: Ajuste nas configurações das VMs e comandos de alguns contêineres – Nov/2020
+  title: Errata 3 - Ajuste nas configurações das VMs e comandos de alguns contêineres – Nov/2020
   subtitle:
   thumbnail:
 ---

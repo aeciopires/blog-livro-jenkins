@@ -1,11 +1,11 @@
 ---
-title: Errata 2: Ajuste na configuração do Nexus – Nov/2019
+title: Errata 2 - Ajuste na configuração do Nexus – Nov/2019
 subtitle:
 image:
 alt:
 
 caption:
-  title: Errata 2: Ajuste na configuração do Nexus – Nov/2019
+  title: Errata 2 - Ajuste na configuração do Nexus – Nov/2019
   subtitle:
   thumbnail:
 ---
