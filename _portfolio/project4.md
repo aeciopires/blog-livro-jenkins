@@ -1,80 +1,37 @@
 ---
-title: Instalando o Zabbix via Puppet
+title: Errata 1 – Mar/2019
 subtitle:
 image:
 alt:
 
 caption:
-  title: Instalando o Zabbix via Puppet
+  title: Errata 1 – Mar/2019
   subtitle:
   thumbnail:
 ---
-OBS.: Este tutorial foi executado usando o Puppet 4.x, Zabbix 3.2 e as VMs do Debian 8 criadas para o livro [Gerência de Configuração com Puppet](https://novatec.com.br/livros/puppet/). Para a execução deste tutorial, é assumido que você executou todos os passos do livro até o capítulo 5.
+Olá, leitores!
 
-O [Zabbix](http://zabbix.com) é um serviço de gerenciamento e monitoramento de aplicações e equipamentos de rede. No Puppet ele pode ser gerenciado usando o módulo puppet-zabbix. Nos passos a seguir será apresentada uma configuração bem simples para este serviço no Debian. Mais opções e exemplos de configuração deste módulo podem ser encontrados na página [https://forge.puppet.com/puppet/zabbix](https://forge.puppet.com/puppet/zabbix).
+Primeiramente quero agradecer a confiança ao adquirir o nosso livro. Esperamos que ele seja útil no seu aprendizado e no dia a dia da profissão.
 
-1) Acesse o Puppet Server e execute o comando a seguir para instalar o módulo **puppet-zabbix**.
+Essa errata corrige alguns pequenos erros no texto. São elas:
 
-```bash
-puppet module install puppet-zabbix
-```
+1) Contra-capa:
 
-2- Ainda no Puppet Server, edite o arquivo ``/etc/puppetlabs/code/environments/production/manifests/site.pp`` e defina a seguinte configuração para gerenciar o serviço Zabbix no host **node1** usando o módulo e as dependências instaladas anteriormente.
+Antes: Conhecerá um caso de uso do Jenkins ao ser integrado **caom** as ferramentas: ...
 
-```bash
-node node1.domain.com.br {
- #Configurando o Apache 
- class { 'apache':
-   mpm_module       => 'prefork',
-   default_vhost    => false,
-   server_signature => 'Off',
-   server_tokens    => 'Prod',
-   trace_enable     => 'Off',
- }
+> Depois: Conhecerá um caso de uso do Jenkins ao ser integrado **com** as ferramentas: ...
 
- #Incluindo o suporte ao PHP no Apache
- include apache::mod::php
+2) Página 49 da seção 3.2 – Configuração como código:   
 
- #Definindo a porta padrao do HTTP
- apache::listen { '80': }
+Antes: Mas e se você tivesse **de** configurar uns 10 servidores Jenkins cada um com uma **centena de 20 plugins?**
 
- #Defindo as cifras e protocolos SSL a serem usados no acesso via HTTPS
-   class { 'apache::mod::ssl':
-   ssl_cipher   => 'HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1:!TLSv1.1',
-   ssl_protocol => [ 'all', '-SSLv2', '-SSLv3', '-TLSv1', '-TLSv1.1' ],
- }
+> Depois: Mas e se você tivesse **que** configurar uns 10 servidores Jenkins cada um com uma **centena de plugins?**
 
- #Configurando o modulo wsgi
- class { 'apache::mod::wsgi':
-   wsgi_socket_prefix => '/var/run/wsgi',
- }
+3) Página 72 da seção 3.5 – Gerenciando credenciais:   
 
- #Adicionando o suporte a MySQL
- class { 'mysql::server': }
+Antes: No campo ID, informe o texto que será usado para referenciar o **login e a senha informados** anteriormente, exemplo: meu-acesso-gitlab…   
 
- #Configurando o Zabbix Server
- class { 'zabbix':
-   zabbix_url     => 'node1.domain.com.br',
-   database_type  => 'mysql',
-   zabbix_version => '3.4',
-   apache_use_ssl => true,
- }
+> Depois: No campo ID, informe o texto que será usado para referenciar o **token informado** anteriormente, exemplo: meu-acesso-gitlab… 
+Estas alterações já serão aplicadas na próxima impressão.
 
- #Configurando o Zabbix Agent
- class { 'zabbix::agent':
-  server => 'node1.domain.com.br',
- }
-}
-```
-
-3- Acesse o host ``node1.domain.com.br`` e execute o comando a seguir para obter o novo catálogo de configuração.
-
-```bash
-puppet agent -t
-```
-
-4- Verifique o funcionamento do serviço acessando ``https://node1.domain.com.br``. Aceite o certificado auto-assinado e acesse o Zabbix com o login **Admin** e a senha **zabbix**.
-
-Se for necessário, ajuste os valores das opções de configuração no arquivo ``/etc/puppetlabs/code/environments/production/manifests/site.pp`` do host **master** para atender as suas necessidades do seu ambiente.
-
-Para obter documentação sobre o uso do Zabbix, acesse a página [http://zabbixbrasil.org/?page_id=7](http://zabbixbrasil.org/?page_id=7).
+Abraço e fiquem com Deus.
