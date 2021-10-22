@@ -94,7 +94,7 @@ pt: &DEFAULT_PT
   #      logo: assets/img/clients/creative-market.jpg
 
   team:
-    title: "Autor e Revisor"
+    title: "Autores"
     text: "Conheça as pessoas que colaboraram com o conteúdo do livro."
     subtext: "Possui alguma dúvida, sugestão de melhoria, problema ou elogio? Entre em contato por meio deste link: [https://form.jotformz.com/52873922998677](https://form.jotformz.com/52873922998677)"
     section: team
