@@ -54,7 +54,7 @@ pt: &DEFAULT_PT
         year:
         desc: "Automatize tarefas que vão desde o push no repositório Git até o deploy em ambientes de teste, homologação e produção."
         image: assets/img/timeline/2.png
-        alt:
+        alt: Icons made by [Becris](https://www.flaticon.com/authors/becris) from [Flaticon](https://www.flaticon.com)
       - title: "Pipeline"
         year:
         desc: "Desenvolva pipelines em etapas que facilitem a visualização do andamento do trabalho automatizado realizado pelo Jenkins."
@@ -64,7 +64,7 @@ pt: &DEFAULT_PT
         year:
         desc: "Com o Jenkins você conseguirá identificar problemas em alguma etapa do pipeline mais rápido e fazer deploy com maior frequência de forma automatizada confiável."
         image: assets/img/timeline/4.png
-        alt:
+        alt: Icons made by [Flat icons](https://www.flaticon.com/authors/flat-icons) from [Flaticon](https://www.flaticon.com)
         # you can enforce the alignment
         align: right
     end:
