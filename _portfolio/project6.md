@@ -7,7 +7,8 @@ alt:
 caption:
   title: Errata 3-Ajuste nas configurações das VMs e comandos de alguns contêineres – Nov/2020
   subtitle:
-  thumbnail:
+  thumbnail: assets/img/portfolio/blog.png
+  alt: Icons made by [Cornelia Springer](https://www.pngitem.com/userpic/13649/) from [Pngitem](https://www.pngitem.com/middle/iwhTmbo_blogging-png-transparent-png/)
 ---
 Olá, pessoal!
 

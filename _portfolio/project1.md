@@ -7,7 +7,8 @@ alt:
 caption:
   title: Máquinas Virtuais
   subtitle:
-  thumbnail:
+  thumbnail: assets/img/portfolio/blog.png
+  alt: Icons made by [Cornelia Springer](https://www.pngitem.com/userpic/13649/) from [Pngitem](https://www.pngitem.com/middle/iwhTmbo_blogging-png-transparent-png/)
 ---
 Para automatizar e simplificar a criação de máquinas virtuais para executar os exercícios do livro, será utilizado o [Vagrant](https://www.vagrantup.com), um software que permite a criação máquinas virtuais no Virtualbox, VmWare e Hiper-V, de forma simples e automatizada agilizando a criação de ambientes de desenvolvimento e testes. Neste livro, o Vagrant será usado em conjunto com o VirtualBox.
 
