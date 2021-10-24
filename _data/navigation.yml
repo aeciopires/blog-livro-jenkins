@@ -19,7 +19,7 @@ pt: &DEFAULT_PT
       section: about
     - title: "Características"
       section: timeline
-    - title: "Autor"
+    - title: "Autores"
       section: team
     - title: "Novatec"
       url: https://novatec.com.br/livros/jenkins/
