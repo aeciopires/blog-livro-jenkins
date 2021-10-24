@@ -7,7 +7,7 @@ alt:
 caption:
   title: Errata 2-Ajuste na configuração do Nexus – Nov/2019
   subtitle:
-  thumbnail: assets/img/portfolio/blog.png
+  thumbnail: assets/img/portfolio/blog2.png
   alt: Icons made by [Cornelia Springer](https://www.pngitem.com/userpic/13649/) from [Pngitem](https://www.pngitem.com/middle/iwhTmbo_blogging-png-transparent-png/)
 ---
 Olá, pessoal!
