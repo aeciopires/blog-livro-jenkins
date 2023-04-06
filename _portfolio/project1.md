@@ -12,7 +12,7 @@ caption:
 ---
 Para automatizar e simplificar a criação de máquinas virtuais para executar os exercícios do livro, será utilizado o [Vagrant](https://www.vagrantup.com), um software que permite a criação máquinas virtuais no Virtualbox, VmWare e Hiper-V, de forma simples e automatizada agilizando a criação de ambientes de desenvolvimento e testes. Neste livro, o Vagrant será usado em conjunto com o VirtualBox.
 
-As configurações das máquinas virtuais são definidas num arquivo chamado de [Vagrantfile](https://gitlab.com/livro/jenkins/blob/master/capitulo_02/vagrant/Vagrantfile). Ele faz uso da box [Ubuntu_18.04-64-Puppet](https://app.vagrantup.com/aeciopires/boxes/ubuntu-18.04-64-puppet).
+As configurações das máquinas virtuais são definidas num arquivo chamado de [Vagrantfile](https://gitlab.com/livro/jenkins/blob/master/capitulo_02/vagrant/Vagrantfile). Ele faz uso da box [Ubuntu_22.04-64-Puppet](https://app.vagrantup.com/aeciopires/boxes/ubuntu-22.04-64-puppet).
 
 Observações:
 
